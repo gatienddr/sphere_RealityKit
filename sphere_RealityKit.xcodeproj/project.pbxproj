@@ -10,9 +10,9 @@
 		D58D15FD29B4D93A005BABEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D15FC29B4D93A005BABEE /* AppDelegate.swift */; };
 		D58D15FF29B4D93A005BABEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D15FE29B4D93A005BABEE /* SceneDelegate.swift */; };
 		D58D160129B4D93A005BABEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D160029B4D93A005BABEE /* ViewController.swift */; };
-		D58D160429B4D93A005BABEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D160229B4D93A005BABEE /* Main.storyboard */; };
 		D58D160629B4D93B005BABEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58D160529B4D93B005BABEE /* Assets.xcassets */; };
 		D58D160929B4D93B005BABEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58D160729B4D93B005BABEE /* LaunchScreen.storyboard */; };
+		D58D161329B4DD2C005BABEE /* background.skybox in Resources */ = {isa = PBXBuildFile; fileRef = D58D161229B4DD2C005BABEE /* background.skybox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		D58D15FC29B4D93A005BABEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D58D15FE29B4D93A005BABEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D58D160029B4D93A005BABEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D58D160329B4D93A005BABEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D58D160529B4D93B005BABEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58D160829B4D93B005BABEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D58D160A29B4D93B005BABEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58D161229B4DD2C005BABEE /* background.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = background.skybox; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,7 @@
 		D58D15F029B4D93A005BABEE = {
 			isa = PBXGroup;
 			children = (
+				D58D161229B4DD2C005BABEE /* background.skybox */,
 				D58D15FB29B4D93A005BABEE /* sphere_RealityKit */,
 				D58D15FA29B4D93A005BABEE /* Products */,
 			);
@@ -59,7 +60,6 @@
 				D58D15FC29B4D93A005BABEE /* AppDelegate.swift */,
 				D58D15FE29B4D93A005BABEE /* SceneDelegate.swift */,
 				D58D160029B4D93A005BABEE /* ViewController.swift */,
-				D58D160229B4D93A005BABEE /* Main.storyboard */,
 				D58D160529B4D93B005BABEE /* Assets.xcassets */,
 				D58D160729B4D93B005BABEE /* LaunchScreen.storyboard */,
 				D58D160A29B4D93B005BABEE /* Info.plist */,
@@ -126,8 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58D160929B4D93B005BABEE /* LaunchScreen.storyboard in Resources */,
+				D58D161329B4DD2C005BABEE /* background.skybox in Resources */,
 				D58D160629B4D93B005BABEE /* Assets.xcassets in Resources */,
-				D58D160429B4D93A005BABEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D58D160229B4D93A005BABEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D58D160329B4D93A005BABEE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D58D160729B4D93B005BABEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +284,9 @@
 				INFOPLIST_FILE = sphere_RealityKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +294,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sphere-RealityKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +315,9 @@
 				INFOPLIST_FILE = sphere_RealityKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +325,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sphere-RealityKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
